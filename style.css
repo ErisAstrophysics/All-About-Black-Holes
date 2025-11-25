@@ -1,38 +1,74 @@
+@keyframes table-color-shift {
+    0% {box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.5);}
+    50% {box-shadow: 4px 10px 10px rgba(156, 0, 156, 0.5)}
+    100% {box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.5);}
+}
+
+@keyframes header-color-shift {
+    0% {background-color: rgba(0, 0, 0, 0.5);}
+    50% {background-color: rgba(156, 0, 156, 0.5)}
+    100% {background-color: rgba(0, 0, 0, 0.5);}
+}
+
 body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
     background-color: black;
     color: white;
     background-image: url('space-background.jpg');
     background-repeat: repeat;
 }
+
 h1 {
-    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    animation: header-color-shift 3s infinite;
 }
 
 h2 {
-    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding-left: 20px;
+    animation: header-color-shift 3s infinite;
 }
 
 h3 {
-    background-color: rgba(0,0, 0.5);
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px
 }
 
 p {
-    background-color: rgba(0,0, 0.5);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
 }
 
 table {
-    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
-
+    padding-left: 500px;
+    border-collapse: separate;
+    border-spacing: 100px 10px;
+    th, td, tr {
+        animation: table-color-shift 3s infinite;
+    }
 }
 
 ul {
-    background-color: rgba(0,0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 a {
-    background-color: rgba(255, 255, 255, 0.5);
+    color: blue;
+}
+
+a:hover {
+    color: red;
+    box-shadow: 4px 4px 10px rgba(255, 0, 0, 0.75);
+    transition: box-shadow 0.3s ease;
 }
 
 img {
-    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
+    display: block;
+    margin: 0 auto;
+    padding: 50px;
 }

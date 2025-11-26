@@ -17,6 +17,7 @@ body {
     color: white;
     background-image: url('space-background.jpg');
     background-repeat: repeat;
+    cursor: url('icons8-black-hole-48.png') 16 16, auto;
 }
 
 h1 {

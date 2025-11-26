@@ -1,10 +1,10 @@
-@keyframes table-color-shift {
+@keyframes box-shadow-color-shift {
     0% {box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.5);}
     50% {box-shadow: 4px 10px 10px rgba(156, 0, 156, 0.5)}
     100% {box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.5);}
 }
 
-@keyframes header-color-shift {
+@keyframes background-color-shift {
     0% {background-color: rgba(0, 0, 0, 0.5);}
     50% {background-color: rgba(156, 0, 156, 0.5)}
     100% {background-color: rgba(0, 0, 0, 0.5);}
@@ -21,13 +21,13 @@ body {
 
 h1 {
     text-align: center;
-    animation: header-color-shift 3s infinite;
+    animation: background-color-shift 3s infinite;
 }
 
 h2 {
     text-align: center;
     padding-left: 20px;
-    animation: header-color-shift 3s infinite;
+    animation: background-color-shift 3s infinite;
 }
 
 h3 {
@@ -49,7 +49,7 @@ table {
     border-collapse: separate;
     border-spacing: 100px 10px;
     th, td, tr {
-        animation: table-color-shift 3s infinite;
+        animation: box-shadow-color-shift 3s infinite;
     }
 }
 
